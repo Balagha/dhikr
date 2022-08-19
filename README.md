@@ -12,7 +12,7 @@
 
 ![Arabic Quiz](public/arabic_quiz.png)
 
-# ** Prerequisites**
+# **Prerequisites**
 1. Node.js version 14.20.0
 2. npm
 3. ReactJS
