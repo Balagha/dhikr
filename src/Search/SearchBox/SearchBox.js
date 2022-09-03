@@ -22,15 +22,6 @@ const SearchBox = () => {
     }
   };
 
-  //  return <input
-  //     className="SearchBox relative w-full"
-  //     autoFocus={true}
-  //    value={value}
-  //    placeholder="Search Google or Type a URL"
-  //   onInput={event => setValue(event.target.value)}
-  //     onKeyUp={({code}) => code === 'Enter' && goToUrl()}/>;
-
-
 
   return (
     <>
