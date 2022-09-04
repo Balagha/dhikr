@@ -26,18 +26,18 @@ const SearchBox = () => {
   return (
     <>
   
-<div class="flex-col items-center justify-center bg-white pt-5">
+<div className="flex-col items-center justify-center bg-white pt-5">
   
-  <div class="md:w-[450px] mx-auto mt-0 flex w-[92%] items-center rounded-full border hover:shadow-md">
+  <div className="md:w-[450px] mx-auto mt-0 flex w-[92%] items-center rounded-full border hover:shadow-md">
 
 
-    <div class="pl-5">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <div className="pl-5">
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
       </svg>
     </div>
 
-    <input type="text" class="w-full bg-transparent rounded-full py-[14px] pl-4 outline-none"
+    <input type="text" className="w-full bg-transparent rounded-full py-[14px] pl-4 outline-none"
     autoFocus={true}
     value={value}
     placeholder="Search Google or Type a URL"
