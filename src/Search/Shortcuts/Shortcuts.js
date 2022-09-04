@@ -1,6 +1,5 @@
 import {useEffect, useState} from "react";
 import {chrome, faviconPrefix} from "../../Utils";
-import "./Shortcuts.css";
 
 const shorten = text => text.length > 14 ? text.slice(0, 12) + '...' : text
 
