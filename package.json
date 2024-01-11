@@ -15,7 +15,8 @@
   },
   "scripts": {
     "start": "sh -ac '. ./.env; node ./src/manifest.config.js && react-scripts start'",
-    "build": "sh -ac '. ./.env.build; node ./src/manifest.config.js && INLINE_RUNTIME_CHUNK=false react-scripts build && rimraf build/screenshots && rimraf build/manifests'",
+    "build:chrome": "sh -ac '. ./.env.build; BROWSER_MODE='chrome' && node ./src/manifest.config.js && INLINE_RUNTIME_CHUNK=false react-scripts build && rimraf build/screenshots && rimraf build/manifests'",
+    "build:firefox": "sh -ac '. ./.env.build; BROWSER_MODE='firefox' && node ./src/manifest.config.js && INLINE_RUNTIME_CHUNK=false react-scripts build && rimraf build/screenshots && rimraf build/manifests'",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
