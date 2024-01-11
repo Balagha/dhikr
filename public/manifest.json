@@ -12,7 +12,7 @@
   "permissions": [
     "topSites",
     "storage",
-    "chrome://favicon/"
+    "<all_urls>"
   ],
   "icons":{
     "16":"assets/dhikr_16x16.png",
