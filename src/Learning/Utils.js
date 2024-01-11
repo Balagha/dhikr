@@ -1,4 +1,5 @@
 import {useEffect, useRef, useState} from "react";
+import DOMPurify from "dompurify";
 
 const time = process.env.REACT_APP_QUIZ_TIME;
 
@@ -90,3 +91,4 @@ export const useStateTransition = () => {
     return [state, setState];
 }
 
+export const sanitizedData = (data) => ({__html: DOMPurify.sanitize(data)});
