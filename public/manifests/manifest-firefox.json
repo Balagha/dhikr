@@ -1,24 +1,27 @@
 {
   "name": "Dhikr Browser Extension",
   "description": "Daily Dhikr",
-  "version": "1.0",
-  "manifest_version": 2,
+  "version": "3.2",
+  "manifest_version": 3,
   "chrome_url_overrides":{
     "newtab":"index.html"
   },
-  "browser_action":{
-    "default_icon": "assets/dhikr_128x128.png"
+  "action":{
+    "default_icon": {
+      "16":"assets/dhikr_16x16.png",
+      "64":"assets/dhikr_64x64.png",
+      "128":"assets/dhikr_128x128.png"
+    }
   },
   "permissions": [
     "topSites",
-    "storage",
+    "storage"
+  ],
+  "host_permissions": [
     "<all_urls>"
   ],
-  "icons":{
-    "16":"assets/dhikr_16x16.png",
-    "64":"assets/dhikr_64x64.png",
-    "128":"assets/dhikr_128x128.png"
-  },
-  "content_security_policy": "script-src 'self';object-src 'self';"
+  "content_security_policy": {
+    "extension_pages": "script-src 'self';object-src 'self';"
+  }
 }
 
