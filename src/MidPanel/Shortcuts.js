@@ -1,9 +1,7 @@
 import {useEffect, useState} from "react";
-import {chrome, faviconPrefix} from "../Utils";
+import {chrome, favIconUrl} from "../Utils";
 
 const shorten = text => text.length > 14 ? text.slice(0, 12) + '...' : text
-
-const favUrl = site => faviconPrefix() + site.url
 
 const Shortcuts = () => {
     const [topSites, setTopSites] = useState([]);
@@ -21,7 +19,7 @@ const Shortcuts = () => {
                         <rect x="0.201172" y="34.0077" width="10" height="10" rx="5" fill="white"/>
                     </svg>
                 </div>
-                <div className="Shortcut-Logo flex justify-center items-center md:w-[6vw] h-[6vw] max-w-[60px] max-h-[60px] bg-[rgba(23, 169, 99, 0.08)] rounded-[10px] text-[20px] font-black backdrop-blur-[2px]"><img src={favUrl(site)} alt="icon"/></div>
+                <div className="Shortcut-Logo flex justify-center items-center md:w-[6vw] h-[6vw] max-w-[60px] max-h-[60px] bg-[rgba(23, 169, 99, 0.08)] rounded-[10px] text-[20px] font-black backdrop-blur-[2px]"><img src={favIconUrl(site)} alt="icon"/></div>
                 <p className="text-[15px] max-w-full text-center overflow-hidden truncate mt-[.3vw]">{shorten(site.title)}</p>
             </a>;
         }
