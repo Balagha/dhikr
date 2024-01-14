@@ -1,28 +1,83 @@
-# Dhikr
-## Google chrome extension
+<h2 dir="rtl" style="text-align: center;" markdown="1">
+بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم
+</h2>
 
-<div dir="rtl"> <font size="+1">
+# Dhikr Browser Extension
+
+<hr/>
+
+<div dir="rtl" style="text-align: center;" markdown="1"> <font size="+1">
 فَٱذْكُرُونِىٓ أَذْكُرْكُمْ وَٱشْكُرُواْ لِى وَلَا تَكْفُرُونِ
 </font>
 </div>
+<div style="text-align: center;" markdown="1">
+So remember Me and I shall remember you; give thanks to Me and do not be ungrateful to Me for My favours. (2:152)
+</div>
 
-_So remember Me and I shall remember you; give thanks to Me and do not be ungrateful to Me for My favours. (2:152)_
+## Overview
 
-### Read a Hadith, Learn a new word whenever you open a new tab
+Dhikr is a cross-browser extension that brings a touch of spiritual enrichment to your daily browsing experience. With Dhikr, every new tab becomes an opportunity to read a Hadith and learn a new word, fostering a sense of mindfulness and knowledge.
 
+![Hadith](public/screenshots/hadith.JPG)
 
-![Hadith](public/screenshots/hadith.png)
+![Arabic Quiz](public/screenshots/quiz.JPG)
 
-![Arabic Quiz](public/screenshots/arabic_quiz.png)
+## Features
 
-# Prerequisites
-1. Node.js ^14
+- **Hadith:** Each time you open a new tab, Dhikr presents you with a carefully selected Hadith to inspire and guide you.
 
-# How to run Dhikr
-1. `git clone https://github.com/NHSanto/dhikr.git`
-2. `npm i`
-3. `npm start`
+- **Learn a New Word:** Expand your vocabulary by discovering a new word with its definition every time you open a new tab.
 
-# Dhikr Installation
-[Click here](https://chrome.google.com/webstore/detail/dhikr-chrome-extension/alhhipkdolifadffnollpkijfpnlnfka/related?authuser=1) and install Dhikr as your chorme extension.
+- **Cross Browser Support:** Dhikr is available for both Chrome and Firefox browsers, ensuring accessibility for a wider audience.
 
+## Installation
+### Chrome
+- Visit the [Chrome Web Store](https://chromewebstore.google.com/detail/dhikr-browser-extension/alhhipkdolifadffnollpkijfpnlnfka).
+- Click on "Add to Chrome" to install the extension.
+- Dhikr is now ready to enrich your browsing experience.
+### Firefox
+- Visit the [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/dhikr/).
+- Click on "Add to Firefox" to install the extension.
+- Dhikr is now ready to enhance your Firefox browsing.
+
+## Development
+To set up the development environment for Dhikr, follow these steps:
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Balagha/dhikr.git
+```
+2. Install dependencies:
+```bash
+cd dhikr
+npm install
+```
+3. Create a .env file in the root directory and set the necessary environment variables.
+
+4. Start the development server:
+```bash
+npm start
+```
+
+## Build
+
+To build Dhikr for Chrome or Firefox, use the following commands:
+
+### Chrome
+```bash
+npm run build:chrome
+```
+
+### Firefox
+```bash
+npm run build:firefox
+```
+These commands will generate the necessary build files in the build directory.
+
+## Contributing
+We welcome contributions from the community. If you find any issues or have ideas for improvements, please open an issue or submit a pull request.
+
+## License
+This project is licensed under the [Apache License](https://github.com/Balagha/dhikr/blob/main/LICENSE).
+
+<hr/>
