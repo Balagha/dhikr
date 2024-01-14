@@ -1,16 +1,15 @@
-<h2 dir="rtl" style="text-align: center;" markdown="1">
+<h2 dir="rtl" align="center">
 بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم
 </h2>
 
 # Dhikr Browser Extension
 
-<hr/>
-
-<div dir="rtl" style="text-align: center;" markdown="1"> <font size="+1">
+<div dir="rtl" align="center"> <font size="+1">
 فَٱذْكُرُونِىٓ أَذْكُرْكُمْ وَٱشْكُرُواْ لِى وَلَا تَكْفُرُونِ
 </font>
 </div>
-<div style="text-align: center;" markdown="1">
+
+<div align="center">
 So remember Me and I shall remember you; give thanks to Me and do not be ungrateful to Me for My favours. (2:152)
 </div>
 
