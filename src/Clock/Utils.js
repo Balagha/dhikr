@@ -7,9 +7,11 @@ export const getFormattedTime = (hour, minute) => {
 };
 
 const retrieveNamazTimes = (setData) => {
-    new Promise((resolve) => navigator.geolocation.getCurrentPosition(({coords}) => resolve(coords)))
+    new Promise((resolve) => navigator.geolocation.getCurrentPosition(({coords}) => resolve(coords),
+        ()=>console.log('error'),
+        { enableHighAccuracy: true }))
         .then(({latitude, longitude}) => `method=1&school=1&latitude=${latitude}&longitude=${longitude}`)
-        .then(query => fetch(`http://api.aladhan.com/v1/timings?${query}`))
+        .then(query => fetch(`https://api.aladhan.com/v1/timings?${query}`))
         .then(response => response.json())
         .then(({data}) => setData({...data, lastUpdated: new Date().getTime()}));
 };
@@ -20,9 +22,16 @@ export const useNamazApi = () => {
         if (done) {
             const currentTime = new Date().getTime();
             if (!(apiData && apiData.lastUpdated + 1000 * 60 * 60 > currentTime))
-                retrieveNamazTimes(setApiData);
+            {
+                navigator.permissions.query({ name: "geolocation" }).then((result) => {
+                    if (result.state === "granted" || result.state === "prompt") {
+                        retrieveNamazTimes(setApiData);
+                    } else {
+                        console.warn("Geolocation permission denied. Cannot fetch Namaz times.");
+                    }
+                });
+            }
         }
     }, [done]);
-
     return apiData;
 };

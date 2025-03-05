@@ -91,4 +91,4 @@ export const useStateTransition = () => {
     return [state, setState];
 }
 
-export const sanitizedData = (data) => ({__html: DOMPurify.sanitize(data)});
+export const sanitizedData = (html) => ({__html: DOMPurify.sanitize(html)});

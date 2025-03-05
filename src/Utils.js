@@ -61,7 +61,7 @@ export const favIconUrl = site => {
     }
 }
 
-export const chrome = window.chrome.topSites ? window.chrome : mockChrome;
+export const chrome = window.chrome?.storage ? window.chrome : mockChrome;
 export const useLocalStorage = (key, fallback) => {
     const [value, setValue] = useState(fallback);
     const [done, setDone] = useState(false);
