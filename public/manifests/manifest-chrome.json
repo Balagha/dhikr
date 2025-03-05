@@ -14,9 +14,13 @@
     }
   },
   "permissions": [
+    "geolocation",
     "topSites",
     "storage",
     "favicon"
+  ],
+  "host_permissions": [
+    "https://api.aladhan.com/*"
   ],
   "web_accessible_resources": [
     {
