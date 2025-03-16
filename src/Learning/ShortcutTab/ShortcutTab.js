@@ -28,7 +28,7 @@ const ShortcutTab = () => {
             <div className="flex items-center gap-4">
                 <a
                     href="https://mail.google.com"
-                    target="_blank"
+                    target="_self"
                     rel="noopener noreferrer"
                     className="text-sm text-gray-700 hover:underline px-2 py-1 rounded-sm transition-colors duration-200 hover:bg-gray-100"
                 >
@@ -36,7 +36,7 @@ const ShortcutTab = () => {
                 </a>
                 <a
                     href="https://www.google.com/imghp"
-                    target="_blank"
+                    target="_self"
                     rel="noopener noreferrer"
                     className="text-sm text-gray-700 hover:underline px-2 py-1 rounded-sm transition-colors duration-200 hover:bg-gray-100"
                 >
@@ -44,7 +44,7 @@ const ShortcutTab = () => {
                 </a>
                 <a
                     href="https://labs.google.com/search/"
-                    target="_blank"
+                    target="_self"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full hover:bg-gray-100 transition-colors duration-200"
                 >
