@@ -82,7 +82,7 @@ const TopSites = () => {
                     <a href={shortcut.url} className="flex flex-col justify-center items-center">
                         <div
                             className="w-[60px] h-[60px] bg-gray-200 rounded-full flex justify-center items-center shadow-md">
-                            <img src={favIconUrl(shortcut)} alt="icon" className="w-[32px] h-[32px] object-contain"/>
+                            <img src={favIconUrl(shortcut.url)} alt="icon" className="w-[32px] h-[32px] object-contain"/>
                         </div>
                         <p className="text-[15px] max-w-full text-center overflow-hidden truncate mt-[.3vw]">{shorten(shortcut.title)}</p>
                     </a>

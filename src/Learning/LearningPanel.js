@@ -1,7 +1,6 @@
 import Hadith from "./Hadith";
 import Quiz from "./Quiz";
 import {useLocalStorage} from "../Utils";
-import ShortcutTab from "./ShortcutTab/ShortcutTab";
 
 function LearningPanel() {
     const [showHadith, setShowHadith] = useLocalStorage('showHadith', true);
@@ -9,7 +8,7 @@ function LearningPanel() {
 
     return (
         <div>
-            <ShortcutTab />
+            {/*<ShortcutTab />*/}
             {showHadith ? <Hadith showQuiz={toggle} /> : <Quiz showHadith={toggle} />}
         </div>
     );
