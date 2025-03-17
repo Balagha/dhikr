@@ -67,14 +67,25 @@ export const useLocalStorage = (key, fallback) => {
     const [done, setDone] = useState(false);
 
     useEffect(() => {
-        chrome.storage.local.get(key, value => {
+        chrome.storage.local.get([key], (result) => {
+            setDone(true);
+            if (result && result[key] !== undefined) {
+                setValue(result[key]);
+            }
+        });
+    }, [key]); // Added key as a dependency
 
-            setDone(true)
-            if(value!==null && value[key]!==null)
-                setValue(value[key])
-            })
-    }, []);
-    const saveValue = value => chrome.storage.local.set({[key]: value}, () => setValue(value));
-    return [value, saveValue,done];
-}
+    const saveValue = (newValue) => {
+        if (newValue === undefined || newValue === null) {
+            console.warn(`Skipping save: invalid value for key "${key}"`, newValue);
+            return;
+        }
+        chrome.storage.local.set({[key]: newValue}, () => {
+            setValue(newValue);
+        });
+    };
+
+    return [value ?? fallback, saveValue, done]; // Ensure value is never undefined
+};
+
 

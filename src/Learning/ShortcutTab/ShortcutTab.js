@@ -102,28 +102,10 @@ const ShortcutTab = () => {
                         className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-10"
                     >
                         <a
-                            href="#"
+                            href="https://drive.google.com/drive/home"
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         >
-                            Google Apps
-                        </a>
-                        <a
-                            href="#"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                        >
-                            Settings
-                        </a>
-                        <a
-                            href="#"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                        >
-                            Help
-                        </a>
-                        <a
-                            href="#"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                        >
-                            Extensions
+                            Drive
                         </a>
                     </div>
                 )}

@@ -36,7 +36,7 @@ const NamazTimes = () => {
         border-r-[1px] border-black text-right relative items-end">
             <h4 className="absolute top-[10vh] left-[5%] text-center
             max-w[100%-10px] transform translate-y-[-50%]"><img src="/assets/dhikr_64x64.png" alt="Dhikr logo 64x64"/></h4>
-            <ul className='md:text-[15px] text-[9px] pt-[.30vh] pb-[.30vh] pl-0 pr-0 font-sans relative leading-[3vh]'>{createTimeline(apiData)}</ul>
+            <ul className='md:text-[15px] text-[9px] pt-[.30vh] pb-[.30vh] pl-[29px] pr-0 font-sans relative leading-[3vh]'>{createTimeline(apiData)}</ul>
         </div> :
         <></>;
 };
